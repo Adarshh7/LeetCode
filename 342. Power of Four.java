@@ -1,9 +1,8 @@
-public class Power_of_Four  {
-
-	public static void main(String[] args) {
-  int n=2147483647,i=0; long x=0;
-boolean b=false;
-  while(x<n)
+class Solution {
+    public boolean isPowerOfFour(int n) {
+    boolean b=false;
+        int i=0; long x=0;
+    while(x<=n)
   {
    x=(long)Math.pow(4, i);
    i++;
@@ -15,7 +14,6 @@ boolean b=false;
   else 
 	  continue;
    } 
-  System.out.println(b);  
-	}
-
+        return b;
+    }
 }
