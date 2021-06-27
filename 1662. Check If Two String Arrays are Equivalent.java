@@ -1,10 +1,8 @@
-public class Check If Two String Arrays are Equivalent {
-	public static void main(String[] args) {
-		String word1[] = {"ab", "c"}; 
-	    String word2[] = {"a", "bc"};
+class Solution {
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
 	    StringBuilder s=new StringBuilder(); 
 	    StringBuilder s1=new StringBuilder();
-	    boolean b=false;
+        boolean b=false;
 	    for(int i=0;i<word1.length;i++)
 	    {
 	    	s.append(word1[i]);
@@ -14,11 +12,9 @@ public class Check If Two String Arrays are Equivalent {
 	    	s1.append(word2[i]);
 	    }
 	    
-	   if(s.toString().equals(s1.toString()))
-	    	b=true;
-	  
-	   System.out.println(b);
-	    
-	}
-
+	   if(s.toString().equals(s1.toString()))  
+           b=true;
+        
+        return b;
+    }
 }
