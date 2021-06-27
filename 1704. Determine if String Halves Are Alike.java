@@ -1,9 +1,6 @@
-public class Determine if String Halves Are Alike {
-
-	public static void main(String[] args) {
-		String s="book";
-		int n=s.length();
-		boolean b=false;
+class Solution {
+    public boolean halvesAreAlike(String s) {
+       int n=s.length();
 		int count=0,count1=0;
 		String s1=s.substring(0,n/2);
 		s1=s1.toLowerCase();
@@ -23,8 +20,9 @@ public class Determine if String Halves Are Alike {
 			} 
 		}
 		if(count==count1)
-			b=true;
-		System.out.println(b);
-	}
-
+			return true; 
+        else
+            return false;
+    
+    }
 }
