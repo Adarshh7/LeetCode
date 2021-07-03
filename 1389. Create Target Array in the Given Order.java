@@ -1,9 +1,5 @@
-import java.util.LinkedList;
-public class Create Target Array in the Given Order {
-
-	public static void main(String[] args) {
-		int nums[] = {0,1,2,3,4};
-		int index[] = {0,1,2,2,1};
+class Solution {
+    public int[] createTargetArray(int[] nums, int[] index) {
 		LinkedList<Integer>list = new LinkedList<Integer>();
 		int target[]=new int[nums.length];
 		for(int i=0;i<nums.length;i++)
@@ -17,11 +13,6 @@ public class Create Target Array in the Given Order {
 		  {
 	            target[i] = (int)a[i];
 	        }
-		  for (int i=0;i<target.length;i++) 
-		  {
-	           System.out.print(target[i]);
-	        }
-		 
-	}
-
+        return target;
+    }
 }
